@@ -1,4 +1,4 @@
-use-vault: true
+use-vault: false
 price: 
   world: 100
   world_nether: 200

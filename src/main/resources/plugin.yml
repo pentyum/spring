@@ -1,4 +1,4 @@
-name: placewater
+name: spring
 main: com.piggest.minecraft.bukkit.spring.Spring
 api-version: 1.13
 version: 0.0.1

@@ -10,8 +10,8 @@ import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 
 public class UseItemListener implements Listener {
-	private Placewater pw = null;
-	public UseItemListener(Placewater pw){
+	private Spring pw = null;
+	public UseItemListener(Spring pw){
 		this.pw = pw;
 	}
 	@EventHandler

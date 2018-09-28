@@ -1,22 +1,22 @@
 name: placewater
-main: com.piggest.minecraft.bukkit.placewater.Placewater
+main: com.piggest.minecraft.bukkit.spring.Spring
 api-version: 1.13
-version: 0.0.5
+version: 0.0.1
 author: Pentyum
 commands:
-  placewater:
+  spring:
     description: place water on your foot.
     usage: /<command> to place water on your foot or /<command> setprice [world] to change price.
     permission: placewater.place
     permission-message: You don't have permission
 permissions:
-  placewater.*:
+  spring.*:
     description: Gives access to all placewater commands
     default: op
-  placewater.place:
+  spring.place:
     description: Gives access to place water
     default: true
-  placewater.changeprice:
+  spring.changeprice:
     description: change place water price
     default: op
 softdepend: [Vault]

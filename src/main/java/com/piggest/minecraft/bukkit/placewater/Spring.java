@@ -12,7 +12,7 @@ import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 import net.milkbowl.vault.economy.Economy;
 
-public class Placewater extends JavaPlugin {
+public class Spring extends JavaPlugin {
 	private boolean use_vault = true;
 	private Economy economy = null;
 	private ConfigurationSection price = null;

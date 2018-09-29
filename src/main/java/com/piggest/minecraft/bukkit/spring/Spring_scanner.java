@@ -75,20 +75,6 @@ public class Spring_scanner extends BukkitRunnable {
 		}
 	}
 
-	public boolean check_player_condition(Player player) {
-		Location loc = player.getLocation();
-		if (loc.getBlock().getType() == Material.WATER) {
-			loc.setY(loc.getY() - 2);
-			if (loc.getBlock().getType() == Material.LAVA || loc.getBlock().getType() == Material.FIRE) {
-				return true;
-			} else {
-				return false;
-			}
-		} else {
-			return false;
-		}
-	}
-
 	public void run() {
 		player_list = spring.getServer().getOnlinePlayers();
 		for (Player player : player_list) {

@@ -4,8 +4,6 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 
-import org.bukkit.Location;
-import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
 
@@ -17,9 +15,6 @@ public class Spring_scanner extends BukkitRunnable {
 
 	public Spring_scanner(Spring plugin) {
 		this.spring = plugin;
-		this.register_checker("com.piggest.minecraft.bukkit.spring.Spring_checker");
-		// Spring_checker spring_checker = new Spring_checker();
-		// this.checker_list.add(spring_checker);
 	}
 
 	public void register_checker(String checker_name) {

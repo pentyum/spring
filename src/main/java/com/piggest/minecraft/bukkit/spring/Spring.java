@@ -4,7 +4,6 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.event.Listener;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -51,6 +50,7 @@ public class Spring extends JavaPlugin {
 		}
 		PluginManager pm = getServer().getPluginManager();
 		pm.registerEvents(logout_listener, this);
+		spring_scanner.register_checker("com.piggest.minecraft.bukkit.spring.Spring_checker");
 		spring_scanner.runTaskTimerAsynchronously(this, 0, 10);
 
 	}

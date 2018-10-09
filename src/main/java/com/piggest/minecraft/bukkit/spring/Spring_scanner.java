@@ -54,7 +54,7 @@ public class Spring_scanner extends BukkitRunnable {
 			buffer = new Spring_buffer(player);
 			buffer_list.put(player, buffer);
 			buffer.runTaskTimer(spring, 0, 5 * 20);
-			player.sendMessage("持续性buff已添加");
+			player.sendMessage("欢迎进入温泉");
 		} else {
 			if (buffer.isCancelled() == true) {
 				buffer.runTaskTimer(spring, 0, 5 * 20);
@@ -66,7 +66,7 @@ public class Spring_scanner extends BukkitRunnable {
 		if (buffer_list.get(player) != null) {
 			buffer_list.get(player).cancel();
 			buffer_list.remove(player);
-			player.sendMessage("buff已移除");
+			//player.sendMessage("buff已移除");
 		}
 	}
 

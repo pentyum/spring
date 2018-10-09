@@ -15,6 +15,6 @@ public class Spring_buffer extends BukkitRunnable {
 	public void run() {
 		PotionEffect effect = new PotionEffect(PotionEffectType.REGENERATION, 6 * 20, 3);
 		player.addPotionEffect(effect, true);
-		player.sendMessage("buff已添加");
+		//player.sendMessage("buff已添加");
 	}
 }

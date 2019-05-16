@@ -13,8 +13,24 @@ public class Spring_buffer extends BukkitRunnable {
 	}
 
 	public void run() {
+		if (Spring.use_vault == true) {
+			String world_name = player.getWorld().getName();
+			if(!Spring.price.getKeys(false).contains(world_name)) {
+				world_name = "other";
+			}
+			int price = Spring.price.getInt(world_name);
+			if (Spring.economy.has(player, price)) {
+				Spring.economy.withdrawPlayer(player, price);
+			} else {
+				player.sendMessage("你的钱不够泡温泉");
+			}
+		} else {
+			buff(player);
+		}
+	}
+	
+	private void buff(Player player) {
 		PotionEffect effect = new PotionEffect(PotionEffectType.REGENERATION, 6 * 20, 3);
 		player.addPotionEffect(effect, true);
-		//player.sendMessage("buff已添加");
 	}
 }

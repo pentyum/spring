@@ -1,22 +1,22 @@
 name: spring
 main: com.piggest.minecraft.bukkit.spring.Spring
 api-version: 1.13
-version: 0.0.1
+version: 0.2.0
 author: Pentyum
 commands:
   spring:
-    description: place water on your foot.
-    usage: /<command> to place water on your foot or /<command> setprice [world] to change price.
-    permission: placewater.place
+    description: Spring plugin 0.2.0
+    usage: Spring plugin 0.2.0
+    permission: spring.use
     permission-message: You don't have permission
 permissions:
   spring.*:
-    description: Gives access to all placewater commands
+    description: Gives access to all spring commands
     default: op
-  spring.place:
-    description: Gives access to place water
+  spring.use:
+    description: Use spring.
     default: true
   spring.changeprice:
-    description: change place water price
+    description: change place spring price.
     default: op
 softdepend: [Vault]

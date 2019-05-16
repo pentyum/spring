@@ -10,9 +10,9 @@ import org.bukkit.plugin.java.JavaPlugin;
 import net.milkbowl.vault.economy.Economy;
 
 public class Spring extends JavaPlugin {
-	private boolean use_vault = true;
-	private Economy economy = null;
-	private ConfigurationSection price = null;
+	static boolean use_vault = true;
+	static Economy economy = null;
+	static ConfigurationSection price = null;
 	private FileConfiguration config = null;
 	private final Spring_scanner spring_scanner = new Spring_scanner(this);
 	private Player_logout_listener logout_listener = new Player_logout_listener(this);

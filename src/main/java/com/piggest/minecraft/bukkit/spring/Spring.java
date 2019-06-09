@@ -58,6 +58,7 @@ public class Spring extends JavaPlugin {
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		if (cmd.getName().equalsIgnoreCase("spring")) {
+			sender.sendMessage("在水的下面两格点火或者放岩浆后可以构成温泉，进入温泉后可以回血。");
 			return true;
 		}
 		return true;

@@ -1,6 +1,6 @@
 name: spring
 main: com.piggest.minecraft.bukkit.spring.Spring
-api-version: 1.13
+api-version: 1.15
 version: 0.2.0
 author: Pentyum
 commands:
